@@ -1,0 +1,34 @@
+.App {
+  text-align: center;
+  display:flex;
+  justify-content: center;
+}
+
+.row {
+  display: flex;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.row .block {
+  width: 200px;
+  height: 200px;
+  background-color: #999999;
+  border: 1px solid #000000;
+  border-collapse: separate;
+  transition-duration: 0.4s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.row .block:hover {
+  cursor: pointer;
+  background-color: #eee;
+}
+
+.row .block span {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 28px;
+  font-weight: 900;
+  color: #000000;
+}
